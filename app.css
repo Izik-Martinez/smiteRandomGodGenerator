@@ -46,10 +46,12 @@ display: flex;
 .title{
 
 height: 80%;
-width: 70%;
+width: 80%;
 background-color: red;
-
+font-size: 36px;
 }
+
+
 
 .flexCenter{
 display: flex;
