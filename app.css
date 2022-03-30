@@ -47,8 +47,11 @@ display: flex;
 
 height: 80%;
 width: 80%;
-background-color: red;
-font-size: 36px;
+border: 2px solid red;
+font-size: 48px;
+font-family: 'Alegreya';
+border-radius: 10px 10px 0px 0px;
+border-bottom: transparent;
 }
 
 
@@ -61,3 +64,25 @@ align-items: center;
 }
 
 
+.buttonStyle{
+
+
+background: none;
+color: #ffa260;
+border: 2px solid;
+padding: 1em 2em;
+font-size: 1em;
+
+
+
+}
+
+.buttonStyle:hover{
+
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.35em);
+    transition: transform .15s, box-shadow .15s;
+    cursor: pointer;
+}
