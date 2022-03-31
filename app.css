@@ -63,6 +63,25 @@ align-items: center;
 
 }
 
+.fillSpace{
+
+height: 100%;
+width: 100%;
+
+}
+
+.godSelection{
+
+height: 125px;
+width: 125px;
+background: white;
+box-shadow: 0 0 0 8px #632c63, 0 0 0 12px #a769a7, 0 0 0 16px #c380c3, 0 0 0 20px #640064;
+border-radius: 10px;
+
+
+
+}
+
 
 .buttonStyle{
 
