@@ -1,8 +1,13 @@
 const godSelectionImageBox = document.querySelector(".godSelection");
 const generateRandomGodButton = document.querySelector("button");
 const godIcon = document.querySelector(".godSelectionIcon")
+function randomNum(){
 
-generateRandomGodButton.addEventListener("click", function(){godIcon.src = "images/atlas.webp"});
+return Math.floor(Math.random()*119)
+
+
+}
+generateRandomGodButton.addEventListener("click", function(){godIcon.src = arrayOfGods[randomNum()].src});
 
 // function randomGod(){
 
@@ -14,404 +19,837 @@ generateRandomGodButton.addEventListener("click", function(){godIcon.src = "imag
 
 
 
-// const arrayOfGods = [
+const arrayOfGods = [
 
 
-// {
-//   name: "achilles",
-//   image: test  
+{
+  name: "achilles",
+  src: "images/achilles.jpg"
 
 
 
-// },
-// {
-//     name:  test ,
-//     image: test  
+},
+{
+    name: "agni",
+    src: "images/agni.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "ahPuch",
+    src: "images/ahPuch.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "ama",
+    src: "images/ama.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "amc",
+    src: "images/amc.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "anhur",
+    src: "images/anhur.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "anubis",
+    src: "images/anubis.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "aoKuang",
+    src: "images/aoKuang.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "aphro",
+    src: "images/aphro.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "apollo",
+    src: "images/apollo.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "arachne",
+    src: "images/arachne.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "ares",
+    src: "images/ares.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "artemis",
+    src: "images/artemis.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "artio",
+    src: "images/artio.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "athena",
+    src: "images/athena.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "atlas",
+    src: "images/atlas.webp"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "awilix",
+    src: "images/awilix.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "babaYaga",
+    src: "images/babaYaga.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "bacchus ",
+    src: "images/bacchus.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "baka",
+    src: "images/baka.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "baron",
+    src: "images/baron.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "bastet",
+    src: "images/bastet.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "bellona",
+    src: "images/bellona.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "cabrakan",
+    src: "images/cabrakan.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "camazotz",
+    src: "images/camazotz.png"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "cerb",
+    src: "images/cerb.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "cern",
+    src: "images/cern.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "chaac",
+    src: "images/chaac.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "change",
+    src: "images/change.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "chern",
+    src: "images/chern.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "chiron",
+    src: "images/chiron.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "chronos",
+    src: "images/chronos.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "cliodhna",
+    src: "images/cliodhna.webp"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "cthulu",
+    src: "images/cthulu.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "cuChu",
+    src: "images/cuChu.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "cupid",
+    src: "images/cupid.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "daJi",
+    src: "images/daJi.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "danzaburou",
+    src: "images/danzaburou.webp"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "discordia",
+    src: "images/discordia.jpg"
   
   
   
-//   },
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "erlang",
+    src: "images/erlang.jpg"
   
   
   
-//   },
-//   {
-//   name:  test ,
-//   image: test  
-
-
-
-// },
-// {
-//   name:  test ,
-//   image: test  
-
-
-
-// },
-// {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "eset",
+    src: "images/eset.jpg"
   
   
   
-//   },
-//   {
-//   name:  test ,
-//   image: test  
-
-
-
-// },
-// {
-//   name:  test ,
-//   image: test  
-
-
-
-// },
-// {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "fafnir",
+    src: "images/fafnir.png"
   
   
   
-//   },
-
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "fenrir",
+    src: "images/fenrir.jpg"
   
   
   
-//   },
-
-//   {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "freya",
+    src: "images/freya.jpg"
   
   
   
-//   },
-//   {
-//   name:  test ,
-//   image: test  
-
-
-
-// },
-// {
-//     name:  test ,
-//     image: test  
+  },
+  {
+    name: "ganesha",
+    src: "images/ganesha.jpg"
   
   
   
-//   },
-//   {
-//   name:  test ,
-//   image: test  
-
-
-
-// },
-// {
-//   name:  test ,
-//   image: test  
-
-
-
-// },
-// {
-//   name:  test ,
-//   image: test  
-
-
-
-// },
-
-// {
-//   name:  test ,
-//   image: test  
-
-
-
-// },
-// {
-//   name:  test ,
-//   image: test  
-
-
-
-// },
-// {
-//   name:  test ,
-//   image: test  
-
-
+  },
+  {
+    name: "geb",
+    src: "images/geb.jpg"
+  
+  
+  
+  },
+  {
+    name: "gilgamesh",
+    src: "images/gilgamesh.png"
+  
+  
+  
+  },
+  {
+    name: "guanYu",
+    src: "images/guanYu.jpg"
+  
+  
+  
+  },
+  {
+    name: "hachiman",
+    src: "images/hachiman.jpg"
+  
+  
+  
+  },
+  {
+    name: "hades",
+    src: "images/hades.jpg"
+  
+  
+  
+  },
+  {
+    name: "heBo",
+    src: "images/heBo.jpg"
+  
+  
+  
+  },
+  {
+    name: "heim",
+    src: "images/heim.jpg"
+  
+  
+  
+  },
+  {
+    name: "hel",
+    src: "images/hel.jpg"
+  
+  
+  
+  },
+  {
+    name: "hera",
+    src: "images/hera.jpg"
+  
+  
+  
+  },
+  {
+    name: "herc",
+    src: "images/herc.jpg"
+  
+  
+  
+  },
+  {
+    name: "horus",
+    src: "images/horus.jpg"
+  
+  
+  
+  },
+  {
+    name: "houYi",
+    src: "images/houYi.jpg"
+  
+  
+  
+  },
+  {
+    name: "hunBatz",
+    src: "images/hunBatz.jpg"
+  
+  
+  
+  },
+  {
+    name: "izanami",
+    src: "images/izanami.png"
+  
+  
+  
+  },
+  {
+    name: "janus",
+    src: "images/janus.jpg"
+  
+  
+  
+  },
+  {
+    name: "jingWei",
+    src: "images/jingWei.jpg"
+  
+  
+  
+  },
+  {
+    name: "jorm",
+    src: "images/jorm.jpg"
+  
+  
+  
+  },
+  {
+    name: "kali",
+    src: "images/kali.jpg"
+  
+  
+  
+  },
+  {
+    name: "khepri",
+    src: "images/khepri.jpg"
+  
+  
+  
+  },
+  {
+    name: "kingArthur",
+    src: "images/kingArthur.jpg"
+  
+  
+  
+  },
+  {
+    name: "kuku",
+    src: "images/kuku.jpg"
+  
+  
+  
+  },
+  {
+    name: "kumba",
+    src: "images/kumba.jpg"
+  
+  
+  
+  },
+  {
+    name: "kuzenbo",
+    src: "images/kuzenbo.jpg"
+  
+  
+  
+  },
+  {
+    name: "loki",
+    src: "images/loki.jpg"
+  
+  
+  
+  },
+  {
+    name: "medusa",
+    src: "images/medusa.jpg"
+  
+  
+  
+  },
+  {
+    name: "merc",
+    src: "images/merc.jpg"
+  
+  
+  
+  },
+  {
+    name: "merlin",
+    src: "images/merlin.jpg"
+  
+  
+  
+  },
+  {
+    name: "morgan",
+    src: "images/morgan.webp"
+  
+  
+  
+  },
+  {
+    name: "morrigan",
+    src: "images/morrigan.jpg"
+  
+  
+  
+  },
+  {
+    name: "mulan",
+    src: "images/mulan.jpg"
+  
+  
+  
+  },
+  {
+    name: "neith",
+    src: "images/neith.jpg"
+  
+  
+  
+  },
+  {
+    name: "nemesis",
+    src: "images/nemesis.jpg"
+  
+  
+  
+  },
+  {
+    name: "neZha",
+    src: "images/neZha.jpg"
+  
+  
+  
+  },
+  {
+    name: "nike",
+    src: "images/nike.jpg"
+  
+  
+  
+  },
+  {
+    name: "nox",
+    src: "images/nox.jpg"
+  
+  
+  
+  },
+  {
+    name: "nuWa",
+    src: "images/nuWa.jpg"
+  
+  
+  
+  },
+  {
+    name: "odin",
+    src: "images/odin.jpg"
+  
+  
+  
+  },
+  {
+    name: "olorun",
+    src: "images/olorun.jpg"
+  
+  
+  
+  },
+  {
+    name: "osiris",
+    src: "images/osiris.jpg"
+  
+  
+  
+  },
+  {
+    name: "pele",
+    src: "images/pele.jpg"
+  
+  
+  
+  },
+  {
+    name: "persephone",
+    src: "images/persephone.jpg"
+  
+  
+  
+  },
+  {
+    name: "poseidon",
+    src: "images/poseidon.jpg"
+  
+  
+  
+  },
+  {
+    name: "ra",
+    src: "images/ra.jpg"
+  
+  
+  
+  },
+  {
+    name: "raijin",
+    src: "images/raijin.jpg"
+  
+  
+  
+  },
+  {
+    name: "rama",
+    src: "images/rama.jpg"
+  
+  
+  
+  },
+  {
+    name: "rat",
+    src: "images/rat.jpg"
+  
+  
+  
+  },
+  {
+    name: "ravana",
+    src: "images/ravana.jpg"
+  
+  
+  
+  },
+  {
+    name: "scylla",
+    src: "images/scylla.jpg"
+  
+  
+  
+  },
+  {
+    name: "serqet",
+    src: "images/serqet.jpg"
+  
+  
+  
+  },
+  {
+    name: "set",
+    src: "images/set.jpg"
+  
+  
+  
+  },
+  {
+    name: "shiva",
+    src: "images/shiva.webp"
+  
+  
+  
+  },
+  {
+    name: "skadi",
+    src: "images/skadi.jpg"
+  
+  
+  
+  },
+  {
+    name: "sobek",
+    src: "images/sobek.jpg"
+  
+  
+  
+  },
+  {
+    name: "sol",
+    src: "images/sol.png"
+  
+  
+  
+  },
+  {
+    name: "sunWu",
+    src: "images/sunWu.jpg"
+  
+  
+  
+  },
+  {
+    name: "susano",
+    src: "images/susano.png"
+  
+  
+  
+  },
+  {
+    name: "sylvanus",
+    src: "images/sylvanus.jpg"
+  
+  
+  
+  },
+  {
+    name: "terra",
+    src: "images/terra.jpg"
+  
+  
+  
+  },
+  {
+    name: "thanatos",
+    src: "images/thanatos.jpg"
+  
+  
+  
+  },
+  {
+    name: "thor",
+    src: "images/thor.jpg"
+  
+  
+  
+  },
+  {
+    name: "thoth",
+    src: "images/thoth.jpg"
+  
+  
+  
+  },
+  {
+    name: "tiamat",
+    src: "images/tiamat.webp"
+  
+  
+  
+  },
+  {
+    name: "tsukuyomi",
+    src: "images/tsukuyomi.webp"
+  
+  
+  
+  },
+  {
+    name: "tyr",
+    src: "images/tyr.jpg"
+  
+  
+  
+  },
+  {
+    name: "ullur",
+    src: "images/ullur.jpg"
+  
+  
+  
+  },
+  {
+    name: "vamana",
+    src: "images/vamana.jpg"
+  
+  
+  
+  },
+  {
+    name: "vulcan",
+    src: "images/vulcan.jpg"
+  
+  
+  
+  },
+  {
+    name: "xbalanque",
+    src: "images/xbalanque.jpg"
+  
+  
+  
+  },
+  {
+    name: "xingTian",
+    src: "images/xingTian.png"
+  
+  
+  
+  },
+  {
+    name: "yemoja",
+    src: "images/yemoja.jpg"
+  
+  
+  
+  },
+  {
+    name: "ymir",
+    src: "images/ymir.jpg"
+  
+  
+  
+  },
+  {
+    name: "zeus",
+    src: "images/zeus.jpg"
+  
+  
+  
+  },
+  {
+    name: "zhongKui.jpg",
+    src: "images/"
+  
+  
+  
+  }
 
-// },
+]
 
 
 
@@ -442,7 +880,6 @@ generateRandomGodButton.addEventListener("click", function(){godIcon.src = "imag
 
 
 
-// ]
 
 
 
