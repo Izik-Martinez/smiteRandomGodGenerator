@@ -1,10 +1,452 @@
 const godSelectionImageBox = document.querySelector(".godSelection");
 const generateRandomGodButton = document.querySelector("button");
+const godIcon = document.querySelector(".godSelectionIcon")
 
-function randomGod(){
+generateRandomGodButton.addEventListener("click", function(){godIcon.src = "images/achilles.jpg"});
+
+// function randomGod(){
 
 
-
+    // godImage.src = "/images/agni.jpg";
 
     
-}
+// }
+
+
+
+// const arrayOfGods = [
+
+
+// {
+//   name: "achilles",
+//   image: test  
+
+
+
+// },
+// {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//   name:  test ,
+//   image: test  
+
+
+
+// },
+// {
+//   name:  test ,
+//   image: test  
+
+
+
+// },
+// {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//   name:  test ,
+//   image: test  
+
+
+
+// },
+// {
+//   name:  test ,
+//   image: test  
+
+
+
+// },
+// {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+
+//   {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//   name:  test ,
+//   image: test  
+
+
+
+// },
+// {
+//     name:  test ,
+//     image: test  
+  
+  
+  
+//   },
+//   {
+//   name:  test ,
+//   image: test  
+
+
+
+// },
+// {
+//   name:  test ,
+//   image: test  
+
+
+
+// },
+// {
+//   name:  test ,
+//   image: test  
+
+
+
+// },
+
+// {
+//   name:  test ,
+//   image: test  
+
+
+
+// },
+// {
+//   name:  test ,
+//   image: test  
+
+
+
+// },
+// {
+//   name:  test ,
+//   image: test  
+
+
+
+// },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ]
+
+
+
+
+
+
+
