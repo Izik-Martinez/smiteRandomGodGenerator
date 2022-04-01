@@ -2,7 +2,7 @@ const godSelectionImageBox = document.querySelector(".godSelection");
 const generateRandomGodButton = document.querySelector("button");
 const godIcon = document.querySelector(".godSelectionIcon")
 
-generateRandomGodButton.addEventListener("click", function(){godIcon.src = "images/aphro.jpg"});
+generateRandomGodButton.addEventListener("click", function(){godIcon.src = "images/atlas.webp"});
 
 // function randomGod(){
 
