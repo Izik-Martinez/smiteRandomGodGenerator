@@ -786,8 +786,8 @@ const arrayOfGods = [
   
   },
   {
-    name: "ullur",
-    src: "images/ullur.jpg"
+    name: "ullr",
+    src: "images/ullr.jpg"
   
   
   
@@ -842,8 +842,8 @@ const arrayOfGods = [
   
   },
   {
-    name: "zhongKui.jpg",
-    src: "images/"
+    name: "zhongKui",
+    src: "images/zhongKui.jpg"
   
   
   
