@@ -234,7 +234,7 @@ const arrayOfGods = [
   },
   {
     name: "chiron",
-    src: "images/chiron.jpg"
+    src: "images/chiron.png"
   
   
   
@@ -290,7 +290,7 @@ const arrayOfGods = [
   },
   {
     name: "discordia",
-    src: "images/discordia.jpg"
+    src: "images/discordia.webp"
   
   
   
